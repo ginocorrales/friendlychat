@@ -17,7 +17,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Learn how to use the Firebase platform on the Web">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Friendly Chat</title>
+  <title>Ginux Inc. Chat</title>
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
@@ -56,7 +56,7 @@
   <header class="mdl-layout__header mdl-color-text--white mdl-color--light-blue-700">
     <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
       <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-        <h3><i class="material-icons">chat_bubble_outline</i> Friendly Chat</h3>
+        <h3><i class="material-icons">chat_bubble_outline</i> Ginux Inc. Chat</h3>
       </div>
       <div id="user-container">
         <div hidden id="user-pic"></div>
@@ -112,6 +112,20 @@
      * TODO(DEVELOPER): Paste the initialization snippet from: Firebase Console > Overview > Add Firebase to your web app. *
      *********************************************************************************************************************** -->
 
+<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB01LvhBox63wjPC68uHA4uoF7Q6_f8i2Q",
+    authDomain: "friendlychat-c3eb5.firebaseapp.com",
+    databaseURL: "https://friendlychat-c3eb5.firebaseio.com",
+    storageBucket: "friendlychat-c3eb5.appspot.com",
+    messagingSenderId: "823768994682"
+  };
+  firebase.initializeApp(config);
+</script>
+
 <script src="scripts/main.js"></script>
 </body>
+
 </html>
